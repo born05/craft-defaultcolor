@@ -1,0 +1,19 @@
+{
+    "name": "marionnewlevant/craft-defaultcolor",
+    "type": "craft-plugin",
+    "homepage": "https://github.com/marionnewlevant/craft-defaultcolor",
+    "license": "https://github.com/marionnewlevant/craft-defaultcolor/blob/master/LICENSE",
+    "authors": [
+        {
+            "name": "Marion Newlevant"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Craft\\": "app/"
+        }
+    },
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
