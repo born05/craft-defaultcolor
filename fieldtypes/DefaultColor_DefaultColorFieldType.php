@@ -24,10 +24,17 @@ class DefaultColor_DefaultColorFieldType extends BaseFieldType
 
     public function getInputHtml($name, $value)
     {
+        $settings = $this->getSettings();
+
+        // Default to default, so the JS-based color picker is consistent with Chrome
+        if (!$value) {
+            $value = $settings['defaultColor'];
+        }
+
         return craft()->templates->render('defaultcolor/defaultcolor/input', array(
             'name'  => $name,
             'value' => $value,
-            'settings' => $this->getSettings()
+            'settings' => $settings
         ));
     }
 
