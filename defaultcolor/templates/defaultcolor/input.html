@@ -19,8 +19,8 @@
 var DefaultColorNamespace = DefaultColorNamespace || {};
 if (!DefaultColorNamespace.isClickDeclared) {
   $(document).ready(function() {
-    $('.js_color_button').click(function () {
-      var $me = $(this);
+    $(document).on('click', '.js_color_button', function (e) {
+      var $me = $(e.currentTarget);
       var defaultColor = $me.data('defaultcolor');
       // you would think that since this is an id it is unique, and we don't need the closest().
       // You would be wrong.
