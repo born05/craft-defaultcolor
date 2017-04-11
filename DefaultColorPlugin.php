@@ -19,7 +19,7 @@ class DefaultColorPlugin extends BasePlugin
 
     function getVersion()
     {
-        return '0.3';
+        return '1.0.0';
     }
 
     function getDeveloper()
